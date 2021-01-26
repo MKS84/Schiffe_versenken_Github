@@ -13,6 +13,8 @@ public class MainFile {
 		
 		int SPALTEN_test = 11;
 	
+		int variable_test = 42;
+		
 		// Markus flottengroesse entfernt
 		Flotte flotteEins = new Flotte("Spieler 1");
 		Flotte flotteZwei = new Flotte("Spieler 2");
@@ -29,6 +31,8 @@ public class MainFile {
 		Spielfeld spielfeldEins = new Spielfeld(ZEILEN, SPALTEN);
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
 				
+		System.out.println("Die Antwort ist "+variable_test);
+		
 		Spiel.spielStart(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
 		
 		System.out.println("Hallo");
