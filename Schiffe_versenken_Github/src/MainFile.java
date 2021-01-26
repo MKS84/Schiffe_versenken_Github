@@ -15,6 +15,9 @@ public class MainFile {
 		Flotte flotteEins = new Flotte("Spieler 1");
 		Flotte flotteZwei = new Flotte("Spieler 2");
 		
+		// Halli Hallo
+		//ölhjkjhlkhglhkgljh
+		
 		// Markus flotten entfernt
 		Spielfeld spielfeldEins = new Spielfeld(ZEILEN, SPALTEN);
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
