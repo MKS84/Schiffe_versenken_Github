@@ -19,6 +19,7 @@ public class MainFile {
 		//ölhjkjhlkhglhkgljh
 		
 		// Neuer Text
+		// Kommentar für Konflikt
 		
 		// Markus flotten entfernt
 		Spielfeld spielfeldEins = new Spielfeld(ZEILEN, SPALTEN);
