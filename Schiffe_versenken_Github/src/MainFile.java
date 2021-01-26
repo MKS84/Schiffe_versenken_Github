@@ -28,12 +28,12 @@ public class MainFile {
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
 				
 		Spiel.spielStart(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
-		SPALTEN_test++;
+		
 		System.out.println("Hallo");
 		
 		Spiel.setzeSchiff();
 	
-		//Spiel.ausfuehren(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
+		Spiel.ausfuehren(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
 		
 		//Spiel.spielStart(flotteEins, spielfeldEins);
 
