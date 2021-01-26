@@ -23,6 +23,8 @@ public class MainFile {
 		// Neuer Text
 		// Kommentar für Konflikt
 		
+		// Markus: neuer Text für Konflikt
+	
 		// Markus flotten entfernt
 		Spielfeld spielfeldEins = new Spielfeld(ZEILEN, SPALTEN);
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
