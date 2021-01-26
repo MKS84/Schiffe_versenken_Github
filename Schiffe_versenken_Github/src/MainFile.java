@@ -32,6 +32,7 @@ public class MainFile {
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
 				
 		System.out.println("Die Antwort ist "+variable_test);
+		System.out.println("Aber was ist die Frage?");
 		
 		Spiel.spielStart(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
 		
