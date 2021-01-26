@@ -11,32 +11,22 @@ public class MainFile {
 		final int ZEILEN = 11;
 		final int SPALTEN = 11;
 		
-		int SPALTEN_test = 11;
-	
-		int variable_test = 42;
+		
 		
 		// Markus flottengroesse entfernt
 		Flotte flotteEins = new Flotte("Spieler 1");
 		Flotte flotteZwei = new Flotte("Spieler 2");
 		
-		// Halli Hallo
-		//ölhjkjhlkhglhkgljh
-		
-		// Neuer Text
-		// Kommentar für Konflikt
-		
-		// Markus: neuer Text für Konflikt
+	
 	
 		// Markus flotten entfernt
 		Spielfeld spielfeldEins = new Spielfeld(ZEILEN, SPALTEN);
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
 				
-		System.out.println("Die Antwort ist "+variable_test);
-		// erneuter Kommentar
+		
 		
 		Spiel.spielStart(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
 		
-		System.out.println("Hallo");
 		
 		Spiel.setzeSchiff();
 	
