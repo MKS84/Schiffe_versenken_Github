@@ -10,6 +10,8 @@ public class MainFile {
 
 		final int ZEILEN = 11;
 		final int SPALTEN = 11;
+		
+		int SPALTEN_test = 11;
 	
 		// Markus flottengroesse entfernt
 		Flotte flotteEins = new Flotte("Spieler 1");
@@ -26,10 +28,12 @@ public class MainFile {
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);
 				
 		Spiel.spielStart(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
+		SPALTEN_test++;
+		System.out.println("Hallo");
 		
 		Spiel.setzeSchiff();
 	
-		Spiel.ausfuehren(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
+		//Spiel.ausfuehren(flotteEins, flotteZwei, spielfeldEins, spielfeldZwei);
 		
 		//Spiel.spielStart(flotteEins, spielfeldEins);
 
