@@ -18,6 +18,8 @@ public class MainFile {
 		// Halli Hallo
 		//ölhjkjhlkhglhkgljh
 		
+		// Neuer Text
+		
 		// Markus flotten entfernt
 		Spielfeld spielfeldEins = new Spielfeld(ZEILEN, SPALTEN);
 		Spielfeld spielfeldZwei = new Spielfeld(ZEILEN, SPALTEN);

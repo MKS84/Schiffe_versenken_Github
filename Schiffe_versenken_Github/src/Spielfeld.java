@@ -1,14 +1,4 @@
 
-// TODO Flotte:
-// Summe der Koordinaten aller Schiffe einer Flotte.
-// Zuordnung zu Spieler
-
-// TODO Schiff:
-// Koordinaten des Schiffes.
-// 10 x 10 = "Karte"
-// Koordinaten = Status (#,@,X,' ')
-// Zuordnung zu Flotte
-
 /**
  * 
  * Die Klasse Spielfeld stellt das Spielfeld von Schiffe versenken dar. Es
@@ -17,7 +7,7 @@
  * Spalte geben die Koordinaten aus.
  * 
  * @author Markus
- * @version 3.2 (25.01.2021, 11:48)
+ * @version 4.0 (26.01.2021, 11:10)
  * 
  * @param zeilen      Anzahl der Zeilen des Spielfeldes
  * @param spalten     Anzahl der Spalten des Spielfeldes
@@ -75,18 +65,18 @@ public class Spielfeld {
 
 		System.out.println("Spielfeld " + flotte.spielerName + "\n");
 
-		for (int z = 0; z < this.zeilen; z++) {
+		for (int z = 1; z < this.zeilen; z++) {
 
 			if (z == 0) {
 				System.out.print("  ");
 			} else {
-				System.out.print(z + " ");
+				System.out.print((z+1) + " ");
 			}
 
 			for (int s = 1; s < this.spalten; s++) {
 
 				if (z == 0) {
-					System.out.print(" " + (char) ('A' + s) + " ");
+					System.out.print(" " + (char) ('A' ) + " ");
 
 				} else {
 					if (this.koordinaten[z][s] == '#' && schiffeAnzeigen == false) {
@@ -108,13 +98,17 @@ public class Spielfeld {
 	 * Koordinaten-Arrays der einzelnen Schiffe ausgelesen und in das
 	 * Koordinaten-Array des Spielfeldes kopiert.
 	 * 
-	 * In den Koordinaten-Arrays werden folgende Stati durch char-Variablen dargestellt. <br> 
-	 * X = Miss <br> @ = Treffer <br> # = Schiff
+	 * In den Koordinaten-Arrays werden folgende Stati durch char-Variablen
+	 * dargestellt. <br>
+	 * X = Miss <br>
+	 * @ = Treffer <br>
+	 * # = Schiff
 	 * 
 	 * @author Markus
 	 * @version 3.2 (25.01.2021, 11:48)
 	 * 
-	 * @param flotte Das übergebene Flotten-Objekt, aus welchem die Koordinaten für das Spielfeld ausgelesen werden sollen.
+	 * @param flotte Das übergebene Flotten-Objekt, aus welchem die Koordinaten für
+	 *               das Spielfeld ausgelesen werden sollen.
 	 */
 
 	public void hinzufuegen(Flotte flotte) {
